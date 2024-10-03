@@ -32,4 +32,20 @@ public class SinglyLinkedList {
         current.next = newNode;
     }
 
+    //Method to Display the List contents
+    public void print(){
+        ListNode current = head;
+        while(current != null){
+            //Check if the next node is null. if yes then don't print '->'
+            if(current.next == null){
+                System.out.print(current.data);
+                System.out.println();
+                return;
+            }
+            System.out.print(current.data + " -> ");
+            current = current.next;
+        }
+    }
+
+
 }
