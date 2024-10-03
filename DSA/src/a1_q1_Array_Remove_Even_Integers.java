@@ -1,4 +1,4 @@
-public class q1_Array_Remove_Even_Integers {
+public class a1_q1_Array_Remove_Even_Integers {
 
     public static void main(String[] args) {
         int[] originalArray = {3, 2, 4, 7, 10, 6, 5};
