@@ -8,6 +8,7 @@ public class q1_Array_Remove_Even_Integers {
 
     public static int[] removeEvenIntegers(int[] array) {
 
+        //Count the Number of Odd Integers in the array
         int oddCount = 0;
         for (int num : array) {
             if (num % 2 != 0) {
@@ -15,8 +16,11 @@ public class q1_Array_Remove_Even_Integers {
             }
         }
 
+        //Create a New Array with the Count of Odd Numbers
         int[] oddArray = new int[oddCount];
         int index = 0;
+
+        //Iterate through the original Array until the Odd Array is Returned
         for (int num : array) {
             if (num % 2 != 0) {
                 oddArray[index++] = num;
