@@ -47,5 +47,17 @@ public class SinglyLinkedList {
         }
     }
 
+    //Method to Find the Length of a Singly Linked List
+    public void length(){
+        int length = 0;
+        ListNode current = head;
+        while(current != null){
+            length += 1;
+            current = current.next;
+        }
+        System.out.println(length);
+    }
+
+
 
 }
