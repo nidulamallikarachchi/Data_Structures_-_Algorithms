@@ -66,6 +66,55 @@ public class SinglyLinkedList {
         head = newNode;
     }
 
+    // Method to insert a new Node at a given position in the linked list
+    public void insertAtPosition(int position, int value) {
+        // Create the new node with the given value
+        ListNode newNode = new ListNode(value);
+
+        // Check if the position is valid (must be greater than or equal to 1)
+        if (position < 1) {
+            // If the position is less than 1, throw an exception indicating invalid position
+            throw new IndexOutOfBoundsException("Index Out of Bounds");
+        }
+
+        // Special case: If inserting at position 1 (the head of the list)
+        if (position == 1) {
+            // Point the new node's next reference to the current head
+            newNode.next = head;
+            // Make the new node the head of the list
+            head = newNode;
+            // Exit the method since the insertion at the head is done
+            return;
+        }
+
+        // Initialize a pointer to traverse the list, starting at the head
+        ListNode previous = head;
+        // `count` keeps track of the current position as we traverse the list
+        int count = 1;
+
+        // Traverse the list to find the node just before the insertion position
+        while (count < position - 1 && previous != null) {
+            // Move to the next node
+            previous = previous.next;
+            // Increment the position counter
+            count++;
+        }
+
+        // If `previous` becomes null, it means the position is out of bounds
+        // (i.e., the position is greater than the length of the list)
+        if (previous == null) {
+            // Throw an exception indicating invalid position
+            throw new IndexOutOfBoundsException("Index Out of Bounds");
+        } else {
+            // Insert the new node by linking it into the list
+            // Set the new node's next to point to the current node at the desired position
+            newNode.next = previous.next;
+            // Set the previous node's next to point to the new node
+            previous.next = newNode;
+        }
+    }
+
+
 
 
 
