@@ -1,3 +1,5 @@
+package Array;
+
 import java.util.Arrays;
 
 public class a1_q5_Array_Move_Zeros_to_the_End_of_the_Array {

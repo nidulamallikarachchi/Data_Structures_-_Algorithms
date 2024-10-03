@@ -1,3 +1,5 @@
+package Array;
+
 public class a1_q3_Array_Find_Minimum_Value_In_Array {
 
     public static void main(String[] args) {

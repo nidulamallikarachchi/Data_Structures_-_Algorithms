@@ -1,3 +1,5 @@
+package Array;
+
 public class a1_q2_Array_Find_Missing_Number {
 
     public static void main(String[] args) {

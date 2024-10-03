@@ -1,3 +1,5 @@
+package Array;
+
 public class a1_q4_Array_Find_Second_Maximum_Value {
     public static void main(String[] args) {
         int[] array = {12,34,2,34,33,1};

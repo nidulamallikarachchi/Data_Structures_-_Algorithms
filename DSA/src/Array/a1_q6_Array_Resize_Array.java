@@ -1,3 +1,5 @@
+package Array;
+
 import java.util.Arrays;
 
 public class a1_q6_Array_Resize_Array {

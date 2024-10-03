@@ -1,3 +1,5 @@
+package Array;
+
 public class a1_q7_Array_Check_if_Given_String_is_Palindrome {
     public static void main(String[] args) {
         String word = "madam";
